@@ -78,7 +78,7 @@ contract SimpleBank {
       enrolled[msg.sender] = true;
       // 3. Add the amount to the user's balance. Hint: the amount can be
       //    accessed from of the global variable `msg`
-      balnces[msg.sender] += msg.value;
+      balances[msg.sender] += msg.value;
       // 4. Emit the appropriate event associated with this function
       emit LogDepositMade(msg.sender, balances[msg.sender]);
       // 5. return the balance of sndr of this transaction
